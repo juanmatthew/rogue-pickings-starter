@@ -1,6 +1,8 @@
-/** {
+/**/
+
+* {
 	border: 1px dotted red;
-}*/
+}
 
 html {
     font-size:16px;
@@ -125,10 +127,11 @@ header nav ul li a{
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	/*height: auto;
-	float: left;*/
-}
+/*.main-title {
+	height: auto;
+	float: left;
+}*/ 
+
 .main-title h2 {
 	text-align: left;
 	padding: 12px;
@@ -251,7 +254,6 @@ footer span {
 		display: flex;
     	justify-content: space-around;
     	align-items:center;
-		flex-flow: row wrap;
 	}
 
 	header h1 {
@@ -269,11 +271,13 @@ footer span {
 		font-weight: 700;
 		font-size: 0.875em;
 		line-height: 40px;
-		padding-left: 250px;
-		padding-right: 250px;
-		display: inline-block;
+		display: flex;
+		flex-flow: column wrap;
 		/*display: inline;
-		padding: 5px 10px;*/
+		padding: 5px 10px;
+		display: inline-block;
+		padding-left: 250px;
+		padding-right: 250px;*/
 	}
 	header nav ul li a{
 		text-decoration: none;
@@ -286,37 +290,32 @@ footer span {
     /* Desktop styles here */
 
 	header {
-		width: 100%;
-		display: flex;
+		/*	width: 100%;
+		margin-top: 40px;*/
 		justify-content: space-between;
-		margin-top: 40px;
+		flex-flow: row;
 	}
 
 	header h1 {
 		text-align: left;
+		width: 50%;
+		padding: 0;
+		border-bottom: none;
+		/*Green line apears and I can't find the source so I added the below border to cover it.border: 1px dotted #ffffff;*/
+		
+	}
+
+	header nav {
 		width: 40%;
-		padding-left: 2px;
-		/*Green line apears and I can't find the source so I added the below border to cover it.*/
-		border: 1px dotted #ffffff;
+		
 	}
-
-	ul {
-		margin: 0;
-	}
-
-	header nav ul li {
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 0.875em;
-		line-height: 40px;
-		display: inline;
-		padding: 5px 10px;
-		/*display: inline;
-		padding: 5px 10px;*/
+	
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.bottom-section {
-		display: flex;
     	justify-content: space-between;
     	align-items: baseline;
 		height: 30%;
