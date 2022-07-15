@@ -1,6 +1,6 @@
-* {
+/** {
 	border: 1px dotted red;
-}
+}*/
 
 html {
     font-size:16px;
@@ -284,9 +284,73 @@ footer span {
  
 @media all and (min-width:1200px) {
     /* Desktop styles here */
+
+	header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 40px;
+	}
+
+	header h1 {
+		text-align: left;
+		width: 40%;
+		padding-left: 2px;
+		/*Green line apears and I can't find the source so I added the below border to cover it.*/
+		border: 1px dotted #ffffff;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.875em;
+		line-height: 40px;
+		display: inline;
+		padding: 5px 10px;
+		/*display: inline;
+		padding: 5px 10px;*/
+	}
+
+	.bottom-section {
+		display: flex;
+    	justify-content: space-between;
+    	align-items: baseline;
+		height: 30%;
+		padding-top: 5px;
+		padding-left: 5px;
+		font-size: 0.875em;
+		/*border: 1px dotted red;*/
+	}
+
+	.section-two,
+	.section-three {
+		padding-left: 20px;
+	}
+
+	.section-one {
+		flex-grow: 1;
+		flex-basis: 110px;
+		border-top: 1px solid #eee;
+		
+	}
+
 	.section-two {
+		flex-grow: 1;
+		flex-basis: 150px;
+		border-top: 1px solid #eee;
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
+	}
+
+	.section-three {
+		flex-grow: 1;
+		flex-basis: 130px;
+		border-top: 1px solid #eee;
+		
 	}
  
 }
