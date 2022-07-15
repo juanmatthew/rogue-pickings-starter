@@ -1,3 +1,7 @@
+* {
+	border: 1px dotted red;
+}
+
 html {
     font-size:16px;
 }
@@ -143,6 +147,7 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 12px;
 	/*
 	width: 33%;
 	display: flex;
@@ -211,8 +216,8 @@ footer span {
 
 	.bottom-section {
 		display: flex;
-    	justify-content: center;
-    	align-items: center;
+    	justify-content: space-between;
+    	align-items: baseline;
 		height: 30%;
 		padding: 2em;
 		font-size: 0.875em;
@@ -237,13 +242,42 @@ footer span {
 		flex-grow: 1;
 		flex-basis: 130px;
 		border-top: 1px solid #eee;
+		
+	}
+
+	header {
+		text-align: center;
+		width: 100%;
+		display: flex;
+    	justify-content: space-around;
+    	align-items:center;
+		flex-flow: row wrap;
 	}
 
 	header h1 {
-		width: 80%;
+		width: 87%;
 		padding: 20px;
 		border-bottom: 3px solid #77a466;
-		text-align: center;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.875em;
+		line-height: 40px;
+		padding-left: 250px;
+		padding-right: 250px;
+		display: inline-block;
+		/*display: inline;
+		padding: 5px 10px;*/
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
 	}
  
 }
